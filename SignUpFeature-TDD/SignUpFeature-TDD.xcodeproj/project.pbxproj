@@ -16,6 +16,10 @@
 		AE673BBD27C785590014125A /* SignupFormValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BBC27C785590014125A /* SignupFormValidatorTest.swift */; };
 		AE673BBF27C789EF0014125A /* SignUpFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BBE27C789EF0014125A /* SignUpFormValidator.swift */; };
 		AE673BC127C791400014125A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BC027C791400014125A /* Constant.swift */; };
+		AE673BC627C797D80014125A /* SignUpWebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BC527C797D80014125A /* SignUpWebServiceTest.swift */; };
+		AE673BC827C798660014125A /* SignUpWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BC727C798660014125A /* SignUpWebService.swift */; };
+		AE673BCA27C799130014125A /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BC927C799130014125A /* SignUpFormRequestModel.swift */; };
+		AE673BCC27C79A860014125A /* SignUpFormResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BCB27C79A860014125A /* SignUpFormResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		AE673BBC27C785590014125A /* SignupFormValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormValidatorTest.swift; sourceTree = "<group>"; };
 		AE673BBE27C789EF0014125A /* SignUpFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormValidator.swift; sourceTree = "<group>"; };
 		AE673BC027C791400014125A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AE673BC527C797D80014125A /* SignUpWebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebServiceTest.swift; sourceTree = "<group>"; };
+		AE673BC727C798660014125A /* SignUpWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebService.swift; sourceTree = "<group>"; };
+		AE673BC927C799130014125A /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
+		AE673BCB27C79A860014125A /* SignUpFormResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				AE673BBC27C785590014125A /* SignupFormValidatorTest.swift */,
+				AE673BC527C797D80014125A /* SignUpWebServiceTest.swift */,
 			);
 			path = "SignUpFeature-TDDTests";
 			sourceTree = "<group>";
@@ -105,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				AE673BBE27C789EF0014125A /* SignUpFormValidator.swift */,
+				AE673BC727C798660014125A /* SignUpWebService.swift */,
+				AE673BC927C799130014125A /* SignUpFormRequestModel.swift */,
+				AE673BCB27C79A860014125A /* SignUpFormResponseModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -229,7 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE673BC827C798660014125A /* SignUpWebService.swift in Sources */,
 				AE673BBF27C789EF0014125A /* SignUpFormValidator.swift in Sources */,
+				AE673BCC27C79A860014125A /* SignUpFormResponseModel.swift in Sources */,
+				AE673BCA27C799130014125A /* SignUpFormRequestModel.swift in Sources */,
 				AE673B9127C782F50014125A /* ViewController.swift in Sources */,
 				AE673BC127C791400014125A /* Constant.swift in Sources */,
 				AE673B8D27C782F50014125A /* AppDelegate.swift in Sources */,
@@ -241,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE673BC627C797D80014125A /* SignUpWebServiceTest.swift in Sources */,
 				AE673BBD27C785590014125A /* SignupFormValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
