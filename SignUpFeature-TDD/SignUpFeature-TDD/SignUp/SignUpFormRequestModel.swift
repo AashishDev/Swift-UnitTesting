@@ -8,7 +8,6 @@
 import Foundation
 
 struct SignUpFormRequestModel: Encodable {
-    var firstName:String
-    var lastName:String
-    var password: String
+    var title:String
+    var body:String
 }

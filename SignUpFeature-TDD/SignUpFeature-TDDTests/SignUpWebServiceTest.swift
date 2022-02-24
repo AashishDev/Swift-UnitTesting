@@ -22,7 +22,7 @@ class SignUpWebServiceTest: XCTestCase {
         
         //Arrange
         let sut = SignUpWebService(urlString: "https://jsonplaceholder.typicode.com/posts")
-        let signUpFormRequestModel =  SignUpFormRequestModel(firstName:"rohan",lastName:"sharma",password: "123456")
+        let signUpFormRequestModel =  SignUpFormRequestModel(title:"rohan",body:"sharma")
         
         let expectation = self.expectation(description: "SignUp WebService Response Expectation")
         
@@ -31,7 +31,7 @@ class SignUpWebServiceTest: XCTestCase {
             
             //Assert
             // "{\"status\":\"ok\"}"
-            XCTAssertEqual(signUpResponseModel?.status, "ok")
+            XCTAssertEqual(signUpResponseModel?.title, "rohan")
             expectation.fulfill()
         }
         

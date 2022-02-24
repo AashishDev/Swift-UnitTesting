@@ -40,6 +40,10 @@ class SignUpWebService {
         let dataTask =  self.urlSession.dataTask(with: urlRequest) { data,response, error in
             
             if  let data = data,let response = try? JSONDecoder().decode(SignUpFormResponseModel.self, from: data)  {
+                
+                print("121")
+                print(response)
+                print(response.title)
                 completionHandler(response,nil)
             }
             else {

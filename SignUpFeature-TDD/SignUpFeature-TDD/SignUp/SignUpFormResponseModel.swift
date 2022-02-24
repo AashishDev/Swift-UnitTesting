@@ -8,5 +8,5 @@
 import Foundation
 
 struct SignUpFormResponseModel: Decodable {
-    let status:String
+    let title:String
 }
