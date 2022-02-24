@@ -13,7 +13,9 @@
 		AE673B9427C782F50014125A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE673B9227C782F50014125A /* Main.storyboard */; };
 		AE673B9627C782F60014125A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE673B9527C782F60014125A /* Assets.xcassets */; };
 		AE673B9927C782F60014125A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE673B9727C782F60014125A /* LaunchScreen.storyboard */; };
-		AE673BA427C782F70014125A /* SignUpFeature_TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BA327C782F70014125A /* SignUpFeature_TDDTests.swift */; };
+		AE673BBD27C785590014125A /* SignupFormValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BBC27C785590014125A /* SignupFormValidatorTest.swift */; };
+		AE673BBF27C789EF0014125A /* SignUpFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BBE27C789EF0014125A /* SignUpFormValidator.swift */; };
+		AE673BC127C791400014125A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673BC027C791400014125A /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,9 @@
 		AE673B9827C782F60014125A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE673B9A27C782F60014125A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE673B9F27C782F70014125A /* SignUpFeature-TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignUpFeature-TDDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE673BA327C782F70014125A /* SignUpFeature_TDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFeature_TDDTests.swift; sourceTree = "<group>"; };
+		AE673BBC27C785590014125A /* SignupFormValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormValidatorTest.swift; sourceTree = "<group>"; };
+		AE673BBE27C789EF0014125A /* SignUpFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormValidator.swift; sourceTree = "<group>"; };
+		AE673BC027C791400014125A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +82,12 @@
 		AE673B8B27C782F50014125A /* SignUpFeature-TDD */ = {
 			isa = PBXGroup;
 			children = (
-				AE673B8C27C782F50014125A /* AppDelegate.swift */,
-				AE673B8E27C782F50014125A /* SceneDelegate.swift */,
+				AE673BC027C791400014125A /* Constant.swift */,
+				AE673BC427C792860014125A /* Views */,
+				AE673BC327C7926E0014125A /* AppDelegate */,
+				AE673BC227C7925F0014125A /* SignUp */,
 				AE673B9027C782F50014125A /* ViewController.swift */,
-				AE673B9227C782F50014125A /* Main.storyboard */,
 				AE673B9527C782F60014125A /* Assets.xcassets */,
-				AE673B9727C782F60014125A /* LaunchScreen.storyboard */,
 				AE673B9A27C782F60014125A /* Info.plist */,
 			);
 			path = "SignUpFeature-TDD";
@@ -92,9 +96,35 @@
 		AE673BA227C782F70014125A /* SignUpFeature-TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE673BA327C782F70014125A /* SignUpFeature_TDDTests.swift */,
+				AE673BBC27C785590014125A /* SignupFormValidatorTest.swift */,
 			);
 			path = "SignUpFeature-TDDTests";
+			sourceTree = "<group>";
+		};
+		AE673BC227C7925F0014125A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AE673BBE27C789EF0014125A /* SignUpFormValidator.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		AE673BC327C7926E0014125A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AE673B8C27C782F50014125A /* AppDelegate.swift */,
+				AE673B8E27C782F50014125A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AE673BC427C792860014125A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE673B9727C782F60014125A /* LaunchScreen.storyboard */,
+				AE673B9227C782F50014125A /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +180,7 @@
 					};
 					AE673B9E27C782F70014125A = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = AE673B8827C782F50014125A;
 					};
 				};
@@ -198,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE673BBF27C789EF0014125A /* SignUpFormValidator.swift in Sources */,
 				AE673B9127C782F50014125A /* ViewController.swift in Sources */,
+				AE673BC127C791400014125A /* Constant.swift in Sources */,
 				AE673B8D27C782F50014125A /* AppDelegate.swift in Sources */,
 				AE673B8F27C782F50014125A /* SceneDelegate.swift in Sources */,
 			);
@@ -208,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE673BA427C782F70014125A /* SignUpFeature_TDDTests.swift in Sources */,
+				AE673BBD27C785590014125A /* SignupFormValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +450,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -430,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com..SignUpFeature-TDDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpFeature-TDD.app/SignUpFeature-TDD";
@@ -441,6 +476,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
