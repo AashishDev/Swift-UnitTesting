@@ -10,7 +10,6 @@ import Foundation
 struct Constant {
     static let FirstNameMinLength = 2
     static let FirstNameMaxLength = 10
-
     
     static let PasswordMinLength = 5
     static let PasswordMaxLength = 10
