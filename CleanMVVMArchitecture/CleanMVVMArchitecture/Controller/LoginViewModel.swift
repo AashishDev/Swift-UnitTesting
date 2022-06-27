@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import Combine
+
+class LoginViewModel : ObservableObject {
+    
+  func validate(loginUser:LoginUser) -> Bool {
+        
+      if !loginUser.isEmailValid() {
+          return false
+      }
+      
+      if !loginUser.isPasswordValid() {
+          return false
+      }
+      return true
+    }
+    
+}

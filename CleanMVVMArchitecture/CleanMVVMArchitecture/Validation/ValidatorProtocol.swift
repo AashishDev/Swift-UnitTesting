@@ -15,7 +15,9 @@ protocol EmailValidator {
 
 extension EmailValidator {
     func isEmailValid() -> Bool{
-        return true
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
     }
 }
 
@@ -28,7 +30,12 @@ protocol PasswordValidator {
 
 extension PasswordValidator {
     func isPasswordValid() -> Bool {
-        return true
+        if password.count >= Constant.MinimumPasswordLength {
+            return true
+        }
+        else {
+            return false
+        }
     }
 }
 
@@ -40,7 +47,13 @@ protocol PhoneNumberValidator {
 
 extension PhoneNumberValidator {
     func isNumberValid() -> Bool {
-        return true
+        if phoneNumber.count == Constant.PhoneNumberLength {
+            return true
+        }
+        return false
     }
 }
+
+
+
 

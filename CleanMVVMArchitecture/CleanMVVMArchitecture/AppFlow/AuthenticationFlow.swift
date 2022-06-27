@@ -23,10 +23,21 @@ class LoginFlow:Flow {
         navigation.setViewControllers([vc], animated: false)
     }
     
-    func loginSucessfull() {
+    func loginSucessfull(loginScreenAction:LoginScreenAction) {
         print("Login Successfull - ")
+        
+        switch loginScreenAction {
+        case .Authenicated:
+            let dashBoardFlow = DashBoardFlow(navigation: navigation)
+            dashBoardFlow.start()
+            
+        case .SignUp:
+            let signUpFlow = SignUpFlow(navigation: navigation)
+            signUpFlow.start()
+        }
     }
 }
+
 
 
 class SignUpFlow:Flow {

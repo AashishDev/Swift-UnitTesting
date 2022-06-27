@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0A2DD12869A63F00B1F243 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DD02869A63F00B1F243 /* SignUpViewModel.swift */; };
+		AE0A2DD42869A71200B1F243 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DD32869A71200B1F243 /* LoginViewModelTest.swift */; };
+		AE0A2DDA2869AF8200B1F243 /* AppFlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DD92869AF8200B1F243 /* AppFlowTest.swift */; };
+		AE0A2DDC2869CC3400B1F243 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DDB2869CC3400B1F243 /* Constant.swift */; };
+		AE0A2DDF2869D20C00B1F243 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DDE2869D20C00B1F243 /* DashBoardViewController.swift */; };
+		AE0A2DE12869D21F00B1F243 /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DE02869D21F00B1F243 /* DashBoardViewModel.swift */; };
+		AE0A2DE32869DF4600B1F243 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A2DE22869DF4600B1F243 /* LoginViewControllerTest.swift */; };
 		AE63395328693A36009D75F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63395228693A36009D75F1 /* AppDelegate.swift */; };
 		AE63395528693A36009D75F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63395428693A36009D75F1 /* SceneDelegate.swift */; };
 		AE63395A28693A36009D75F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE63395828693A36009D75F1 /* Main.storyboard */; };
 		AE63395C28693A3A009D75F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE63395B28693A3A009D75F1 /* Assets.xcassets */; };
 		AE63395F28693A3A009D75F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE63395D28693A3A009D75F1 /* LaunchScreen.storyboard */; };
-		AE63396A28693A3B009D75F1 /* CleanMVVMArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63396928693A3B009D75F1 /* CleanMVVMArchitectureTests.swift */; };
 		AE63397428693A3B009D75F1 /* CleanMVVMArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63397328693A3B009D75F1 /* CleanMVVMArchitectureUITests.swift */; };
 		AE63397628693A3B009D75F1 /* CleanMVVMArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63397528693A3B009D75F1 /* CleanMVVMArchitectureUITestsLaunchTests.swift */; };
 		AE63398E28693BA0009D75F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63398D28693BA0009D75F1 /* Network.swift */; };
@@ -44,6 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE0A2DD02869A63F00B1F243 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AE0A2DD32869A71200B1F243 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		AE0A2DD92869AF8200B1F243 /* AppFlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowTest.swift; sourceTree = "<group>"; };
+		AE0A2DDB2869CC3400B1F243 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AE0A2DDE2869D20C00B1F243 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		AE0A2DE02869D21F00B1F243 /* DashBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModel.swift; sourceTree = "<group>"; };
+		AE0A2DE22869DF4600B1F243 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
 		AE63394F28693A36009D75F1 /* CleanMVVMArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanMVVMArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE63395228693A36009D75F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE63395428693A36009D75F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +65,6 @@
 		AE63395E28693A3A009D75F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE63396028693A3A009D75F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE63396528693A3B009D75F1 /* CleanMVVMArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMVVMArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE63396928693A3B009D75F1 /* CleanMVVMArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMArchitectureTests.swift; sourceTree = "<group>"; };
 		AE63396F28693A3B009D75F1 /* CleanMVVMArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMVVMArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE63397328693A3B009D75F1 /* CleanMVVMArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMArchitectureUITests.swift; sourceTree = "<group>"; };
 		AE63397528693A3B009D75F1 /* CleanMVVMArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -92,6 +104,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0A2DD22869A6F400B1F243 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AE0A2DD32869A71200B1F243 /* LoginViewModelTest.swift */,
+				AE0A2DE22869DF4600B1F243 /* LoginViewControllerTest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AE0A2DD82869AF7400B1F243 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				AE0A2DD92869AF8200B1F243 /* AppFlowTest.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		AE0A2DDD2869D1FA00B1F243 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				AE0A2DDE2869D20C00B1F243 /* DashBoardViewController.swift */,
+				AE0A2DE02869D21F00B1F243 /* DashBoardViewModel.swift */,
+			);
+			name = DashBoard;
+			sourceTree = "<group>";
+		};
 		AE63394628693A36009D75F1 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +153,7 @@
 		AE63395128693A36009D75F1 /* CleanMVVMArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				AE0A2DDB2869CC3400B1F243 /* Constant.swift */,
 				AE63398928693AEC009D75F1 /* AppFlow */,
 				AE63398828693AB0009D75F1 /* AppEnvironment */,
 				AE63398328693A68009D75F1 /* Controller */,
@@ -134,7 +173,8 @@
 		AE63396828693A3B009D75F1 /* CleanMVVMArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE63396928693A3B009D75F1 /* CleanMVVMArchitectureTests.swift */,
+				AE0A2DD82869AF7400B1F243 /* Flow */,
+				AE0A2DD22869A6F400B1F243 /* Login */,
 			);
 			path = CleanMVVMArchitectureTests;
 			sourceTree = "<group>";
@@ -160,6 +200,7 @@
 		AE63398328693A68009D75F1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE0A2DDD2869D1FA00B1F243 /* DashBoard */,
 				AE6339A12869475D009D75F1 /* SignUp */,
 				AE63399528694495009D75F1 /* Login */,
 			);
@@ -243,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6339A22869476D009D75F1 /* SignUpViewController.swift */,
+				AE0A2DD02869A63F00B1F243 /* SignUpViewModel.swift */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -381,13 +423,17 @@
 				AE6339A32869476D009D75F1 /* SignUpViewController.swift in Sources */,
 				AE633998286944C2009D75F1 /* LoginViewController.swift in Sources */,
 				AE63399C286944F8009D75F1 /* AppFlow.swift in Sources */,
+				AE0A2DDF2869D20C00B1F243 /* DashBoardViewController.swift in Sources */,
 				AE63395328693A36009D75F1 /* AppDelegate.swift in Sources */,
 				AE633993286941F5009D75F1 /* LoginUser.swift in Sources */,
 				AE6339A028694517009D75F1 /* DashBoardFlow.swift in Sources */,
 				AE63395528693A36009D75F1 /* SceneDelegate.swift in Sources */,
 				AE63399E28694508009D75F1 /* AuthenticationFlow.swift in Sources */,
 				AE63398E28693BA0009D75F1 /* Network.swift in Sources */,
+				AE0A2DE12869D21F00B1F243 /* DashBoardViewModel.swift in Sources */,
+				AE0A2DDC2869CC3400B1F243 /* Constant.swift in Sources */,
 				AE6339912869413B009D75F1 /* ValidatorProtocol.swift in Sources */,
+				AE0A2DD12869A63F00B1F243 /* SignUpViewModel.swift in Sources */,
 				AE63399A286944D0009D75F1 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE63396A28693A3B009D75F1 /* CleanMVVMArchitectureTests.swift in Sources */,
+				AE0A2DE32869DF4600B1F243 /* LoginViewControllerTest.swift in Sources */,
+				AE0A2DD42869A71200B1F243 /* LoginViewModelTest.swift in Sources */,
+				AE0A2DDA2869AF8200B1F243 /* AppFlowTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
