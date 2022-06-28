@@ -7,15 +7,16 @@
 
 import Foundation
 
-@MainActor
 class DashBoardViewModel:ObservableObject {
-    
+    private var posts:[Post] = []
     private var service:DashBoardServiceProtocol
-    var response:(([Post])-> Void)?
+   
     var errorHandler:((APIError)-> Void)?
-    
-    init(service:DashBoardServiceProtocol = DashBoardService()) {
+    var dataUpdated:(()-> Void)?
+
+    init(service:DashBoardServiceProtocol) {
         self.service = service
+        fetchPostListings()
     }
     
     func fetchPostListings()  {
@@ -23,11 +24,24 @@ class DashBoardViewModel:ObservableObject {
         self.service.getPostListing { [weak self] result in
             switch result {
             case .success(let posts):
-                self?.response?(posts)
+                self?.posts =  posts
+                self?.dataUpdated?()
                 
             case .failure(let error):
                 self?.errorHandler?(error)
             }
         }
+    }
+}
+
+extension DashBoardViewModel {
+    
+    func noOfPost() -> Int {
+        posts.count
+    }
+    
+    func titleForPost(index:Int) -> String {
+        let post = posts[index]
+        return post.title + "\n\n" + post.body
     }
 }

@@ -38,8 +38,6 @@ class LoginFlow:Flow {
     }
 }
 
-
-
 class SignUpFlow:Flow {
     var navigation:UINavigationController
     

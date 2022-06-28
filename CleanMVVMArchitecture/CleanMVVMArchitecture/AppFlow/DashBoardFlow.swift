@@ -17,9 +17,14 @@ class DashBoardFlow:Flow {
     }
     
     func start() {
+        let sb = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        let service = MainQueueDispatchDecorator(DashBoardService())
+        let vm = DashBoardViewModel(service: service)
         
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        let vc =  storyBoard.instantiateViewController(withIdentifier: "DashBoardViewController") as! DashBoardViewController
+        let vc = sb.instantiateViewController(identifier: "DashBoardViewController") {
+            DashBoardViewController(coder: $0,viewModel:vm)
+        }
+        
         vc.logoutHandler = logoutUser
         navigation.setViewControllers([vc], animated: false)
     }
@@ -29,3 +34,32 @@ class DashBoardFlow:Flow {
         loginFlow.start()
     }
 }
+
+class MainQueueDispatchDecorator:DashBoardServiceProtocol {
+    private let decoratee:DashBoardServiceProtocol
+    
+    init(_ decoratee:DashBoardServiceProtocol){
+        self.decoratee = decoratee
+    }
+    
+    func getPostListing(completionHandler: @escaping (Result<[Post], APIError>) -> Void) {
+        decoratee.getPostListing { result in
+            guaranteeMainThread {
+                completionHandler(result)
+            }
+        }
+    }
+}
+
+func guaranteeMainThread(_ work: @escaping ()-> Void) {
+    if Thread.isMainThread {
+        work()
+    } else {
+        DispatchQueue.main.async {
+            DispatchQueue.main.async(execute: work)
+        }
+    }
+}
+
+
+

@@ -166,9 +166,28 @@
                     <view key="view" contentMode="scaleToFill" id="xq1-Ks-Hj0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FZs-XN-zkC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="E6q-bu-xT0" id="WN2-2y-qkL"/>
+                                    <outlet property="delegate" destination="E6q-bu-xT0" id="2Z6-xj-2WJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wlh-JP-fV4"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Wlh-JP-fV4" firstAttribute="bottom" secondItem="FZs-XN-zkC" secondAttribute="bottom" id="VZg-XW-dDV"/>
+                            <constraint firstItem="FZs-XN-zkC" firstAttribute="top" secondItem="Wlh-JP-fV4" secondAttribute="top" id="VjE-so-rav"/>
+                            <constraint firstItem="Wlh-JP-fV4" firstAttribute="trailing" secondItem="FZs-XN-zkC" secondAttribute="trailing" id="jaZ-au-pGF"/>
+                            <constraint firstItem="FZs-XN-zkC" firstAttribute="leading" secondItem="Wlh-JP-fV4" secondAttribute="leading" id="ta4-ys-0ZA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="FZs-XN-zkC" id="sy3-KK-hZk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqZ-zg-CZg" sceneMemberID="firstResponder"/>
             </objects>

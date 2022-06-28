@@ -36,6 +36,7 @@
 		AE6339A32869476D009D75F1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6339A22869476D009D75F1 /* SignUpViewController.swift */; };
 		AE71FA44286ADC9D00B363F9 /* DashBoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71FA43286ADC9D00B363F9 /* DashBoardService.swift */; };
 		AE71FA46286ADD0A00B363F9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71FA45286ADD0A00B363F9 /* Post.swift */; };
+		AE71FA48286AE9E900B363F9 /* DashBoardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71FA47286AE9E900B363F9 /* DashBoardFactory.swift */; };
 		AEF8BD15286A7F1600928CCB /* AuthenticationFlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD14286A7F1600928CCB /* AuthenticationFlowTest.swift */; };
 		AEF8BD17286A893B00928CCB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD16286A893B00928CCB /* LoginService.swift */; };
 		AEF8BD19286A91BA00928CCB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD18286A91BA00928CCB /* NetworkService.swift */; };
@@ -94,6 +95,7 @@
 		AE6339A22869476D009D75F1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AE71FA43286ADC9D00B363F9 /* DashBoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardService.swift; sourceTree = "<group>"; };
 		AE71FA45286ADD0A00B363F9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AE71FA47286AE9E900B363F9 /* DashBoardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardFactory.swift; sourceTree = "<group>"; };
 		AEF8BD14286A7F1600928CCB /* AuthenticationFlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowTest.swift; sourceTree = "<group>"; };
 		AEF8BD16286A893B00928CCB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		AEF8BD18286A91BA00928CCB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				AE0A2DDD2869D1FA00B1F243 /* DashBoard */,
 				AE6339A12869475D009D75F1 /* SignUp */,
 				AE63399528694495009D75F1 /* Login */,
+				AE71FA47286AE9E900B363F9 /* DashBoardFactory.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				AE63395328693A36009D75F1 /* AppDelegate.swift in Sources */,
 				AE20D108286AB26E00E188BA /* NetworkConfig.swift in Sources */,
 				AEF8BD19286A91BA00928CCB /* NetworkService.swift in Sources */,
+				AE71FA48286AE9E900B363F9 /* DashBoardFactory.swift in Sources */,
 				AE633993286941F5009D75F1 /* LoginUser.swift in Sources */,
 				AE6339A028694517009D75F1 /* DashBoardFlow.swift in Sources */,
 				AEF8BD17286A893B00928CCB /* LoginService.swift in Sources */,

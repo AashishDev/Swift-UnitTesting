@@ -16,5 +16,5 @@ struct Constant {
 struct EndPoint {
     
     static let login = "any-api-loginUrl"
-    static let dashBoard = "https://jsonplaceholder.typicode.com/comments?postId=1"
+    static let dashBoard = "https://jsonplaceholder.typicode.com/posts"
 }

@@ -8,5 +8,6 @@
 import Foundation
 
 class SignUpViewModel:ObservableObject {
+    //@Published var signUpResponse:String
     
 }

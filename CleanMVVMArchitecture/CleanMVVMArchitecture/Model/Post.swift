@@ -9,7 +9,7 @@ import Foundation
 
 struct Post:Codable {
     var id:Int
-    var name:String
+    var title:String
     var body:String
 }
 
