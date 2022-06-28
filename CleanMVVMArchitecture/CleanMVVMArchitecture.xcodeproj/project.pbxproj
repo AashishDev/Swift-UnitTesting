@@ -21,7 +21,7 @@
 		AE63395F28693A3A009D75F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE63395D28693A3A009D75F1 /* LaunchScreen.storyboard */; };
 		AE63397428693A3B009D75F1 /* CleanMVVMArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63397328693A3B009D75F1 /* CleanMVVMArchitectureUITests.swift */; };
 		AE63397628693A3B009D75F1 /* CleanMVVMArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63397528693A3B009D75F1 /* CleanMVVMArchitectureUITestsLaunchTests.swift */; };
-		AE63398E28693BA0009D75F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63398D28693BA0009D75F1 /* Network.swift */; };
+		AE63398E28693BA0009D75F1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63398D28693BA0009D75F1 /* APIService.swift */; };
 		AE6339912869413B009D75F1 /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6339902869413B009D75F1 /* ValidatorProtocol.swift */; };
 		AE633993286941F5009D75F1 /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE633992286941F5009D75F1 /* LoginUser.swift */; };
 		AE633998286944C2009D75F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE633997286944C2009D75F1 /* LoginViewController.swift */; };
@@ -30,6 +30,11 @@
 		AE63399E28694508009D75F1 /* AuthenticationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63399D28694508009D75F1 /* AuthenticationFlow.swift */; };
 		AE6339A028694517009D75F1 /* DashBoardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63399F28694517009D75F1 /* DashBoardFlow.swift */; };
 		AE6339A32869476D009D75F1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6339A22869476D009D75F1 /* SignUpViewController.swift */; };
+		AEF8BD15286A7F1600928CCB /* AuthenticationFlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD14286A7F1600928CCB /* AuthenticationFlowTest.swift */; };
+		AEF8BD17286A893B00928CCB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD16286A893B00928CCB /* LoginService.swift */; };
+		AEF8BD19286A91BA00928CCB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD18286A91BA00928CCB /* NetworkService.swift */; };
+		AEF8BD1B286A91FB00928CCB /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD1A286A91FB00928CCB /* ResponseParser.swift */; };
+		AEF8BD1D286A923500928CCB /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8BD1C286A923500928CCB /* NetworkRequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +73,7 @@
 		AE63396F28693A3B009D75F1 /* CleanMVVMArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMVVMArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE63397328693A3B009D75F1 /* CleanMVVMArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMArchitectureUITests.swift; sourceTree = "<group>"; };
 		AE63397528693A3B009D75F1 /* CleanMVVMArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AE63398D28693BA0009D75F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		AE63398D28693BA0009D75F1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		AE6339902869413B009D75F1 /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
 		AE633992286941F5009D75F1 /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
 		AE633997286944C2009D75F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +82,11 @@
 		AE63399D28694508009D75F1 /* AuthenticationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlow.swift; sourceTree = "<group>"; };
 		AE63399F28694517009D75F1 /* DashBoardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardFlow.swift; sourceTree = "<group>"; };
 		AE6339A22869476D009D75F1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AEF8BD14286A7F1600928CCB /* AuthenticationFlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowTest.swift; sourceTree = "<group>"; };
+		AEF8BD16286A893B00928CCB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		AEF8BD18286A91BA00928CCB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AEF8BD1A286A91FB00928CCB /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		AEF8BD1C286A923500928CCB /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0A2DD92869AF8200B1F243 /* AppFlowTest.swift */,
+				AEF8BD14286A7F1600928CCB /* AuthenticationFlowTest.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -192,7 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				AE63398C28693B76009D75F1 /* NetworkRequestManager */,
-				AE63398D28693BA0009D75F1 /* Network.swift */,
+				AE63398D28693BA0009D75F1 /* APIService.swift */,
+				AEF8BD18286A91BA00928CCB /* NetworkService.swift */,
+				AEF8BD1A286A91FB00928CCB /* ResponseParser.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -259,6 +272,7 @@
 		AE63398C28693B76009D75F1 /* NetworkRequestManager */ = {
 			isa = PBXGroup;
 			children = (
+				AEF8BD1C286A923500928CCB /* NetworkRequestManager.swift */,
 			);
 			path = NetworkRequestManager;
 			sourceTree = "<group>";
@@ -276,6 +290,7 @@
 			children = (
 				AE633997286944C2009D75F1 /* LoginViewController.swift */,
 				AE633999286944D0009D75F1 /* LoginViewModel.swift */,
+				AEF8BD16286A893B00928CCB /* LoginService.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -423,18 +438,22 @@
 				AE6339A32869476D009D75F1 /* SignUpViewController.swift in Sources */,
 				AE633998286944C2009D75F1 /* LoginViewController.swift in Sources */,
 				AE63399C286944F8009D75F1 /* AppFlow.swift in Sources */,
+				AEF8BD1D286A923500928CCB /* NetworkRequestManager.swift in Sources */,
 				AE0A2DDF2869D20C00B1F243 /* DashBoardViewController.swift in Sources */,
 				AE63395328693A36009D75F1 /* AppDelegate.swift in Sources */,
+				AEF8BD19286A91BA00928CCB /* NetworkService.swift in Sources */,
 				AE633993286941F5009D75F1 /* LoginUser.swift in Sources */,
 				AE6339A028694517009D75F1 /* DashBoardFlow.swift in Sources */,
+				AEF8BD17286A893B00928CCB /* LoginService.swift in Sources */,
 				AE63395528693A36009D75F1 /* SceneDelegate.swift in Sources */,
 				AE63399E28694508009D75F1 /* AuthenticationFlow.swift in Sources */,
-				AE63398E28693BA0009D75F1 /* Network.swift in Sources */,
+				AE63398E28693BA0009D75F1 /* APIService.swift in Sources */,
 				AE0A2DE12869D21F00B1F243 /* DashBoardViewModel.swift in Sources */,
 				AE0A2DDC2869CC3400B1F243 /* Constant.swift in Sources */,
 				AE6339912869413B009D75F1 /* ValidatorProtocol.swift in Sources */,
 				AE0A2DD12869A63F00B1F243 /* SignUpViewModel.swift in Sources */,
 				AE63399A286944D0009D75F1 /* LoginViewModel.swift in Sources */,
+				AEF8BD1B286A91FB00928CCB /* ResponseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +464,7 @@
 				AE0A2DE32869DF4600B1F243 /* LoginViewControllerTest.swift in Sources */,
 				AE0A2DD42869A71200B1F243 /* LoginViewModelTest.swift in Sources */,
 				AE0A2DDA2869AF8200B1F243 /* AppFlowTest.swift in Sources */,
+				AEF8BD15286A7F1600928CCB /* AuthenticationFlowTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

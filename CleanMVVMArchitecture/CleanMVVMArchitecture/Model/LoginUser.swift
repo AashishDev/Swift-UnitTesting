@@ -11,3 +11,9 @@ struct LoginUser:EmailValidator,PasswordValidator {
     var email: String
     var password: String
 }
+
+
+struct LoginResponse:Codable {
+    let statusCode:Int
+    let errorMsg:String
+}
