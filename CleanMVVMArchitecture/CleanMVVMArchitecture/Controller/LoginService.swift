@@ -7,11 +7,21 @@
 
 import Foundation
 
-class LoginService {
+protocol LoginServiceProtocol {
+    func authenticateUser(loginRequest:LoginUser,completionHandler: @escaping (Result<LoginResponse,APIError>)-> Void)
+}
 
-    func authenticateUser(loginRequest:LoginUser,completionHandler: @escaping (Result<LoginResponse?,Error>)-> Void) {
+class LoginService:LoginServiceProtocol {
+
+    func authenticateUser(loginRequest:LoginUser,completionHandler: @escaping (Result<LoginResponse,APIError>)-> Void) {
+        guard let url = URL(string: EndPoint.login) else {
+            return completionHandler(.failure(.InValidUrl))
+        }
         
-        let url = URL(string: "Any-Login-Url")
-        
+        var urlRequest =  URLRequest(url: url)
+        let postBody = try? JSONEncoder().encode(loginRequest)
+        urlRequest.httpBody = postBody
+        urlRequest.httpMethod = HTTPMethod.POST.rawValue
+        APIService().execute(responseType: LoginResponse.self, urlRequest: urlRequest,completion: completionHandler)
     }
 }

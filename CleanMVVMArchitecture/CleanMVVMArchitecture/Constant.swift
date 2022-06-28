@@ -11,3 +11,10 @@ struct Constant {
     static let MinimumPasswordLength = 6
     static let PhoneNumberLength = 10
 }
+
+
+struct EndPoint {
+    
+    static let login = "any-api-loginUrl"
+    static let dashBoard = "https://jsonplaceholder.typicode.com/comments?postId=1"
+}

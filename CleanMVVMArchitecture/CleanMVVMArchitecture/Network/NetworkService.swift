@@ -6,14 +6,10 @@
 //
 
 import Foundation
+import CoreVideo
 
 protocol NetworkServiceProtocol {
     func execute(urlRequest: URLRequest,completion: @escaping ((Result<Data, APIError>) -> Void))
-}
-
-enum APIError:Error {
-    case InValidResponse
-    case UnableToParse
 }
 
 // TODO: Voilating -  Single Responsibility Principle (Now Fixed)
@@ -22,11 +18,15 @@ class NetworkService: NetworkServiceProtocol {
     func execute(urlRequest: URLRequest, completion: @escaping ((Result<Data, APIError>) -> Void)) {
         let task = URLSession.shared.dataTask(with: urlRequest) { data, _, error in
             
-            guard let data = data, error != nil else {
-                completion(.failure(APIError.InValidResponse))
+            guard error == nil else {
+                print("Error-- \(String(describing: error?.localizedDescription))")
+               completion(.failure(APIError.InValidResponse))
                 return
             }
-            completion(.success(data))
+            
+            if let data = data {
+                completion(.success(data))
+            }
         }
         task.resume()
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginUser:EmailValidator,PasswordValidator {
+struct LoginUser:Codable,EmailValidator,PasswordValidator {
     var email: String
     var password: String
 }
